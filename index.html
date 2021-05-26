@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    
+    <header class="jumbotron">
+        <h1> Weather Dashboard</h1>
+      </div>
+    </header>
+    
+    <div class="search-city col-3">
+          <label>Enter a city:</label>
+          <div class="search-content">
+            <form class="search-form">
+              <input id="input-city" type="text" placeholder="Search City"/>
+            <div class="search-content">
+                <button id="searchBtn">
+                  <i class="fa fa-search text-white"></i>
+                </button>
+            </div>
+            </form>
+          </div>
+      
+        <!-- Search history to save locally -->
+        
+            <h3>Searched Cities: </h3>
+            <div id="searchHistory"></div>
+            <button id="saved-searches"></button>
+      </div>
+        
+      <div class="row col-10">
+          <h2>Current Weather Conditions</h2>
+          <!-- Current weather  -->
+            <div id="weather" class="weather-box">
+              <h4 id="date"></h4>
+              <h5>City: <span id="city"></span></h5>
+              <div id="currentIcon"><img src=""  class="center"/></div>
+              <p>Weather Conditions: <span id="description"></span></p>
+              <p>Temperature: <span id="temp"></span></p>
+              <p>Humidity: <span id="humidity"></span></p>
+              <p>Wind Speed: <span id="wind"></span></p>
+              <p>UV Index: <span id="currentUVI"></span></p>
+            </div> 
+          </div>
+      </div>
+
+    
+       <!-- 5-Day Forecast Info -->
+      <div class="row">
+        <div class="col-12">
+          <div class="forecast-info">
+          <h2>5-Day Weather Forecast</h2>
+              <div id="fiveDayContainers"></div>
+            
+          </div>
+        </div>
+      </div>
+      <script src="assets/script.js"></script>
+</html>
