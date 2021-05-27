@@ -97,6 +97,16 @@ function getWeather(cityName) {
         var fiveDayContainersEl = document.querySelector("#fiveDayContainers");
         var uvIndex = data.current.uvi;
         uvIndexEl.textContent = uvIndex;
+        //color codes the uv index
+        if (uvIndex <= 2) {
+            uvIndexEl.style.backgroundColor = "green";
+        } else if (uvIndex <=5 && uvIndex >=3) {
+            uvIndexEl.style.backgroundColor = "yellow";
+         } else if (uvIndex <=7 && uvIndex >=6 ) {
+             uvIndexEl.style.backgroundColor = "orange";
+         } else if (uvIndex >= 8) {
+             uvIndexEl.style.backgroundColor = "red";
+         };        
         fiveDayContainersEl.innerHTML = "";
         var fiveDayArray = data.daily.slice(1, 6);
         fiveDayArray.forEach(function (day) {
