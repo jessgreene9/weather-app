@@ -92,7 +92,7 @@ function showWeather(cityName, data) {
 
     // console.log(temperature);
     iconEl.src =
-        "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
+        "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
     descriptionEl.textContent = conditions;
     temperatureEl.textContent = temperature + "°";
     humidityEl.textContent = humidity + "%";
@@ -119,7 +119,7 @@ function showFiveDay(data) {
 
         fiveDayDateEl.textContent = yourDate;
         fiveDescription.src =
-            "http://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
+            "https://openweathermap.org/img/wn/" + day.weather[0].icon + "@2x.png";
         fiveTempEl.textContent = "Temp: " + day.temp.day + "°";
         fiveHumidityEl.textContent = "Humidity: " + day.humidity + "%";
         fiveWindEl.textContent = "Wind: " + day.wind_speed + " mph";
