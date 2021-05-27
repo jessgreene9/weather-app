@@ -26,6 +26,7 @@ function renderSavedSearch() {
     console.log(inputData);
     inputData.forEach(function (citySearched) {
        var cityBtn = document.createElement("button");
+       cityBtn.classList.add("recent-searches");
        searchHistoryEl.appendChild(cityBtn);
        cityBtn.textContent = citySearched;
        cityBtn.addEventListener('click', function(event){
@@ -41,17 +42,10 @@ searchFormEl.addEventListener("submit", function (event) {
     var cityInput = document.querySelector("#input-city").value;
     saveToLocal(cityInput);
     getWeather(cityInput);
-    // saveSearchedWeather(cityInput);
     renderSavedSearch();
 });
 
-// var savedSearches = document.querySelector("#saved-searches");
-// savedSearches.forEach (function (eachSearch){
-//     eachSearch.addEventListener('click', function (event){
-//         var city = eachSearch.innerHTML;
-//         getWeather(city);
-//     });
-// });
+
 
 
 function getWeather(cityName) {

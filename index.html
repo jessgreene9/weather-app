@@ -9,34 +9,32 @@
 </head>
 <body>
     
-    <header class="jumbotron">
+    <header>
         <h1> Weather Dashboard</h1>
       </div>
     </header>
     
-    <div class="search-city col-3">
+    <div class="search-city">
           <label>Enter a city:</label>
           <div class="search-content">
             <form class="search-form">
               <input id="input-city" type="text" placeholder="Search City"/>
             <div class="search-content">
-                <button id="searchBtn">
-                  <i class="fa fa-search text-white"></i>
-                </button>
+                <button id="searchBtn">Search</button>
             </div>
             </form>
           </div>
       
-        <!-- Search history to save locally -->
+        <!-- Search history to be stored locally -->
         
             <h3>Searched Cities: </h3>
             <div id="searchHistory"></div>
             
       </div>
         
-      <div class="row col-10">
+      <div class= "current">
           <h2>Current Weather Conditions</h2>
-          <!-- Current weather  -->
+          
             <div id="weather" class="weather-box">
               <h4 id="date"></h4>
               <h5>City: <span id="city"></span></h5>
@@ -51,9 +49,9 @@
       </div>
 
     
-       <!-- 5-Day Forecast Info -->
-      <div class="row">
-        <div class="col-12">
+      
+      <div class="5day">
+        
           <div class="forecast-info">
           <h2>5-Day Weather Forecast</h2>
               <div id="fiveDayContainers"></div>

@@ -1,3 +1,52 @@
+* {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background-color: rgb(174, 189, 223);
+
+
+}
+
+header {
+    text-align: center;
+    font-size:36px;
+    color: rgb(72, 72, 109)
+}
+
+.search-city label {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.search-city {
+    text-align: left;
+
+}
+
+#input-city {
+    font-size: 20px;
+}
+
+#searchBtn {
+    font-size: 20px;
+}
+
+.recent-searches {
+    display: block;
+    margin: 10px 10px;
+    font-size: 20px;
+
+
+}
+
+.current {
+
+}
+
+
+
+
 .boxes {
     background-color: cadetblue;
     width:200px;
@@ -6,4 +55,6 @@
     margin: 10px 10px;
 
 }
+
+
 
