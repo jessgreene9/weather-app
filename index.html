@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,55 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Weather Dashboard</title>
 </head>
+
 <body>
-    
+
     <header>
         <h1> Weather Dashboard</h1>
-      </div>
     </header>
-    
-    <div class="search-city">
-          <label>Enter a city:</label>
-          <div class="search-content">
-            <form class="search-form">
-              <input id="input-city" type="text" placeholder="Search City"/>
+
+    <div class="container">
+        <div class="search-city">
+            <label>Enter a city:</label>
             <div class="search-content">
-                <button id="searchBtn">Search</button>
+                <form class="search-form">
+                    <input id="input-city" type="text" placeholder="Search City" />
+                    <div class="search-content">
+                        <button id="searchBtn">Search</button>
+                    </div>
+                </form>
             </div>
-            </form>
-          </div>
-      
-        <!-- Search history to be stored locally -->
-        
+
+            <!-- Search history to be stored locally -->
+
             <h3>Searched Cities: </h3>
             <div id="searchHistory"></div>
-            
-      </div>
-        
-      <div class= "current">
-          <h2>Current Weather Conditions</h2>
-          
-            <div id="weather" class="weather-box">
-              <h4 id="date"></h4>
-              <h5>City: <span id="city"></span></h5>
-              <div ><img id="icon" src=""></div>
-              <p>Weather Conditions: <span id="description"></span></p>
-              <p>Temperature: <span id="temp"></span></p>
-              <p>Humidity: <span id="humidity"></span></p>
-              <p>Wind Speed: <span id="wind"></span></p>
-              <p>UV Index: <span id="currentUVI"></span></p>
-            </div> 
-          </div>
-      </div>
 
-    
-      
-      <div class="5day">
-        
-          <div class="forecast-info">
-          <h2>5-Day Weather Forecast</h2>
-              <div id="fiveDayContainers"></div>
-            
-          </div>
         </div>
-      </div>
-      <script src="assets/script.js"></script>
+
+        <div class="current">
+            <h2>Current Weather Conditions</h2>
+
+            <div id="weather" class="weather-box">
+                <h5>City: <span id="city"></span></h5>
+                <div><img id="icon" src=""></div>
+                <p>Weather Conditions: <span id="description"></span></p>
+                <p>Temperature: <span id="temp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="wind"></span></p>
+                <p>UV Index: <span id="currentUVI"></span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="fiveday">
+        <h2>5-Day Weather Forecast</h2>
+        <div id="fiveDayContainers"></div>
+
+    </div>
+    </div>
+    </div>
+    <script src="assets/script.js"></script>
+
 </html>

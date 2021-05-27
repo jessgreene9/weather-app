@@ -1,60 +1,90 @@
 * {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-background-color: rgb(174, 189, 223);
-
-
+  background-color: rgb(174, 189, 223);
+}
+.container {
+  display: flex;
+  color: rgb(46, 46, 75);
 }
 
 header {
-    text-align: center;
-    font-size:36px;
-    color: rgb(72, 72, 109)
+  text-align: center;
+  font-size: 36px;
+  color: rgb(72, 72, 109);
 }
 
 .search-city label {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(46, 46, 75);
 }
 .search-city {
-    text-align: left;
-
+  text-align: left;
+  color: rgb(46, 46, 75);
+  margin-left: 100px;
 }
 
 #input-city {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #searchBtn {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+h3 {
+  color: rgb(46, 46, 75);
 }
 
 .recent-searches {
-    display: block;
-    margin: 10px 10px;
-    font-size: 20px;
-
-
+  display: block;
+  margin: 10px 10px;
+  font-size: 20px;
 }
 
 .current {
-
+  display: inline-block;
+  margin: 0 auto;
+  background-color: rgb(124, 184, 144);
+  padding: 20px;
+  box-shadow: inset 0px 0px 10px 10px rgb(72, 72, 109);
+  border-radius: 10px;
+  color: rgb(46, 46, 75);
 }
 
-
-
+.current h4 {
+  font-size: 20px;
+  color: rgb(46, 46, 75);
+}
 
 .boxes {
-    background-color: cadetblue;
-    width:200px;
-    height: 350px;
-    display: inline-block;
-    margin: 10px 10px;
-
+  background-color: cadetblue;
+  width: 200px;
+  height: 350px;
+  display: inline-block;
+  margin: 30px 10px;
+  color: rgb(46, 46, 75);
+  padding: 15px;
 }
 
+.fiveday {
+  display: flex;
+  justify-content: center;
+  color: rgb(46, 46, 75);
+}
 
+.fiveday h2 {
+  color: rgb(46, 46, 75);
+}
 
+h5, #city {
+    font-size: 24px;
+}
+
+#weather p {
+    font-size: 20px;
+}
