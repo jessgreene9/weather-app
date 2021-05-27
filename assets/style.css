@@ -1,4 +1,9 @@
 .boxes {
     background-color: cadetblue;
+    width:200px;
+    height: 350px;
+    display: inline-block;
+    margin: 10px 10px;
 
 }
+
