@@ -57,10 +57,7 @@ searchFormEl.addEventListener("submit", function (event) {
 function getWeather(cityName) {
     console.log(cityName);
     var apiUrl =
-        "https://api.openweathermap.org/data/2.5/weather?q=" +
-        cityName +
-        "&units=imperial&appid=" +
-        apiKey;
+        "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + apiKey;
     console.log(apiUrl);
     fetch(apiUrl)
         .then(function (response) {
@@ -71,12 +68,7 @@ function getWeather(cityName) {
             showWeather(cityName, data);
 
             var fiveDayUrl =
-                "https://api.openweathermap.org/data/2.5/onecall?lat=" +
-                data.coord.lat +
-                "&lon=" +
-                data.coord.lon +
-                "&units=imperial&appid=" +
-                apiKey;
+                "https://api.openweathermap.org/data/2.5/onecall?lat=" + data.coord.lat + "&lon=" + data.coord.lon + "&units=imperial&appid=" + apiKey;
             fetch(fiveDayUrl)
                 .then(function (response) {
                     return response.json();
@@ -91,6 +83,7 @@ function getWeather(cityName) {
 
 //functions to display information from the fetch
 function showWeather(cityName, data) {
+    var dateCurrent = new Date(data.dt *1000);
     var conditions = data.weather[0].main;
     var temperature = data.main.temp;
     var humidity = data.main.humidity;
@@ -105,6 +98,7 @@ function showWeather(cityName, data) {
     humidityEl.textContent = humidity + "%";
     windSpeedEl.textContent = windSpeed + " mph";
     cityEl.textContent = currentCity;
+    dateEl.textContent = dateCurrent;
 }
 
 
